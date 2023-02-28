@@ -4,7 +4,7 @@ import { ColorConstants } from '../helpers/ColorConstants';
 
 const PortfolioScreen = () => {
 	return (
-		<View style={style.mainContainer}>
+		<View style={styles.mainContainer}>
 			<Text style={styles.textStyle}>This is portfolio screen screen</Text>
 		</View>
 	)
@@ -14,12 +14,13 @@ const styles = StyleSheet.create({
 	mainContainer: {
 		flex: 1, 
 		justifyContent: 'center', 
-		alignItems: 'center'
+		alignItems: 'center',
+		backgroundColor: ColorConstants.black
 	},
 	textStyle: {
 		fontSize: 20,
 		fontWeight: 400,
-		color: ColorConstants.black
+		color: ColorConstants.white
 	}
 })
 

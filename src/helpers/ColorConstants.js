@@ -1,3 +1,4 @@
 export const ColorConstants = {
-    black: "#000000"
+    black: "#0d0b13",
+    white: "#FFFFFF"
 }

@@ -1,10 +1,21 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, StyleSheet, SafeAreaView} from 'react-native';
+import { ColorConstants } from './src/helpers/ColorConstants';
+import Router from './src/Router';
+import HomeScreen from './src/Screens/HomeScreen';
 
 const App = () => {
   return (
-    <View><Text>This is App.js</Text></View>
+    <SafeAreaView style={styles.mainContainer}>
+        <Router />
+    </SafeAreaView>
   )
 }
+
+const styles = StyleSheet.create({
+  mainContainer: {
+    flex: 1,
+  },
+})
 
 export default App;
